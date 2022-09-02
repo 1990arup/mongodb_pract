@@ -8,6 +8,7 @@ d = {
     "email" : "arup@ineuron.ai",
     "surname" : "kumar"
 }
+
 db1 = client['test']
 coll = db1['test']
 coll.insert_one(d)
