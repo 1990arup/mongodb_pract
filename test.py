@@ -29,5 +29,8 @@ database = client['My_info']
 collection = database['info']
 #collection.insert_one(data)
 #collection.insert_many(list_of_records)
-collection1 = database['dktp']
-collection1.insert_one(data1)
+#collection1 = database['dktp']
+#collection1.insert_one(data1)
+record = collection.find()
+for i in record:
+    print(i)
