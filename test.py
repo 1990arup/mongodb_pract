@@ -3,12 +3,12 @@ client = pymongo.MongoClient("mongodb+srv://arup:Arup1234@cluster0.wztkw7o.mongo
 db = client.test
 print(db)
 
-d = {
-    "name":"Arup",
+data = {
+    "name":"Ineuron",
     "email" : "arup@ineuron.ai",
     "surname" : "kumar"
 }
 
-db1 = client['test']
-coll = db1['test']
-coll.insert_one(d)
+database = client['My_info']
+collection = database['info']
+collection.insert_one(data)
